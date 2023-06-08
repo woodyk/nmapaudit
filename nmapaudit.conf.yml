@@ -1,0 +1,23 @@
+####################################################################
+# Maximum number of minions/children we will keep running in
+# parallel.
+maxMinions: 20 
+
+####################################################################
+# Path to nmapaudit log file
+logFile: nmapaudit.log
+
+####################################################################
+# Path to history file
+histFile: nmapaudit.hist.yml
+
+####################################################################
+# List of networks to scan.  If specified with CIDR notation the
+# given block will be scanned
+networks:
+  - hostgroup1: 192.168.0.0/24
+  - host.domain.com: 1.1.1.1/32
+
+####################################################################
+# Set ports to be scanned 
+ports: ["80", "443", "22", "53"]
